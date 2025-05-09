@@ -30,12 +30,14 @@ int main() {
     printf("Digite a quantidade de ponto turístico:\n");
        scanf("%d", &pontoturistico);
 
-    printf(" O código do estado é: %d\n", codigoestado);
-    printf(" O nome do estado é: %s\n", nomeestado);
-    printf(" O nome da capital é: %s\n", capital);
-    printf(" A população: %.2f\n", populacao);
-    printf(" A área: %.2f\n", area);
-    printf(" O PIB: %.2f\n", pib);
+    printf(" O código do estado é: %d \n", codigoestado);
+    printf(" O nome do estado é: %s \n", nomeestado);
+    printf(" O nome da capital é: %s \n", capital);
+    printf(" A população: %.2f \n", populacao);
+    printf(" A área: %.2f \n", area);
+    printf(" O PIB: %.2f \n", pib);
     printf(" Quantidade de ponto turístico: %d\n", pontoturistico);
+
+    return 0;
     
 }

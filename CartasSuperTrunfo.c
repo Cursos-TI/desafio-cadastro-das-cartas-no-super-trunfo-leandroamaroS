@@ -13,6 +13,10 @@ int main() {
     float pib02;
     int pontoturistico01;
     int pontoturistico02;
+    float densidadepopulacional01;
+    float densidadepopulacional02;
+    float pibpercapita01;
+    float pibpercapita02;
 
     printf("Digite o codigo do estado da carta 01:\n");
         scanf("%d", &codigoestado01);
@@ -35,6 +39,9 @@ int main() {
     printf("Digite a quantidade de ponto turístico da carta 01:\n");
        scanf("%d", &pontoturistico01);
 
+    densidadepopulacional01 = populacao01 / area01;
+
+    pibpercapita01 = pib01 / populacao01;
 
     printf(" O código do estado é: %d\n", codigoestado01);
     printf(" O nome do estado é: %s\n", nomeestado01);
@@ -43,6 +50,8 @@ int main() {
     printf(" A área: %.2f\n", area01);
     printf(" O PIB: %.2f\n", pib01);
     printf(" Quantidade de ponto turístico: %d\n", pontoturistico01);
+    printf(" A desidade populacional : %.2f hab/km²\n", densidadepopulacional01);
+    printf(" O pib per capita : %.2f reais\n" , pibpercapita01);
 
     printf("Digite o codigo do estado da carta 02:\n");
     scanf("%d", &codigoestado02);
@@ -50,7 +59,7 @@ int main() {
     printf("Digite o nome do estado da carta 02:\n");
         scanf("%s", nomeestado02);
 
-    printf("Digite o nome da capital da carta 02:\n");
+     printf("Digite o nome da capital da carta 02:\n");
         scanf("%s", capital02);
 
     printf("Digite o número da População da carta 02:\n");
@@ -65,6 +74,9 @@ int main() {
     printf("Digite a quantidade de ponto turístico da carta 02:\n");
         scanf("%d", &pontoturistico02);
 
+    densidadepopulacional02 = populacao02 / area02;
+
+    pibpercapita02 = pib02 / populacao02;
 
     printf(" O código do estado é: %d\n", codigoestado02);
     printf(" O nome do estado é: %s\n", nomeestado02);
@@ -73,5 +85,6 @@ int main() {
     printf(" A área: %.2f\n", area02);
     printf(" O PIB: %.2f\n", pib02);
     printf(" Quantidade de ponto turístico: %d\n", pontoturistico02);
-   
+    printf(" A desidade populacional : %.2f hab/km²\n", densidadepopulacional02);
+    printf(" O pib per capita : %.2f reais\n" , pibpercapita02);
 }
